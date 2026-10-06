@@ -98,6 +98,36 @@
       object-fit:cover;
       display:block;
     }
+    .media-card.logo img{
+      object-fit:contain;
+      background:#fff;
+      padding:24px;
+    }
+    .video-card{
+      position:relative;
+      background:#111;
+    }
+    .video-card img{filter:saturate(.96)}
+    .video-card::before{
+      content:"▶";
+      position:absolute;
+      z-index:2;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      padding-left:3px;
+      color:#fff;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(4px);
+      font-size:18px;
+      pointer-events:none;
+    }
+    .video-card a{display:block;width:100%;height:100%}
     .media-card.wide{grid-column:span 2;aspect-ratio:16/9}
     .portfolio-group + .portfolio-group{margin-top:90px}
     .corporate{
@@ -224,27 +254,30 @@
       <div class="portfolio-group">
         <h3>Video works</h3>
         <div class="grid">
-          <div class="media-card wide"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1r945AGVZjhKYPTN5o3-D44IV9UYirysa/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1TZTfIThlGJd3_8DNnYMsrXgZe04FjTTH" alt="Video work 34"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/15ZGHuNprfxDvd8lhTuedfCZ3-D1svBL3/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1L7sa08Vj6DlSM7oxWda-C2uQnP8Bh5Te" alt="Video work 35"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1o1MOzvfho_EyR5ywyPrEqyBhuDIz9jL8/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1o6RWCb7k_UDWOM9wvTSpgTTknmYHKYu_" alt="Video work 36"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1Gp-Vkw7PKDCF8iw-rGzyjjU5JvdViHVc/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1ZVIE4APQuJGyt2WY4lPo0tYQRpyGo0GP" alt="Video work 37"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1a2ROQdbbhNU8MShUTCwfCliHBeg0Zugp/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1WIv_foyPUI8KMuJDo-NwyhkWNk0rAnrl" alt="Video work 38"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1vmaDUM9GTrTnizwQ1BGYIk9YMF0ZR8yQ/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1q6pFeNfVqDvsWKgl3ebGG9XFh4yaUUVt" alt="Video work 39"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1a2ROQdbbhNU8MShUTCwfCliHBeg0Zugp/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1vJYLTkjWfO2XFwq6GwRuXvzXmJHbmsBQ" alt="Video work 40"></a></div>
+          <div class="media-card video-card has-image"><a href="https://drive.google.com/file/d/1vmaDUM9GTrTnizwQ1BGYIk9YMF0ZR8yQ/view" target="_blank" rel="noopener"><img src="https://drive.google.com/uc?export=view&id=1pTZ8MjHZcaCTmEITyTnnGcTNJB-QHh6u" alt="Video work 41"></a></div>
         </div>
       </div>
 
       <div class="portfolio-group">
         <h3>Graphic works</h3>
         <div class="grid">
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=19lZ1eiKFgf8NrFlCqPBC3NcCmcAjaCyH" alt="Graphic work 26"></div>
-          <div class="media-card wide has-image"><img src="https://drive.google.com/uc?export=view&id=1ujPNatxWkX_-z0PppG94LqTciqBH4MKI" alt="Graphic work 27"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1MwK81fYd4SYQxP45p9hLh1kooIpG5Hdp" alt="Graphic work 28"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=180ABmtwEU3ysZFEReGiFO1NaB-9Sa5lj" alt="Graphic work 29"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=17zIJMCfMrOlAllDOJpislU51K-sEkBTp" alt="Graphic work 30"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1-5G-2aUHLYlHe8XufPRHT-2xQYATRcyY" alt="Graphic work 31"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1t5tx0gcBLKg1mZVIEPUJtGPoGjp-z6nQ" alt="Graphic work 32"></div>
-          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1lw3B7KiRwKn5gPLd6eW-3hAwGXa35x_h" alt="Graphic work 33"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1CuN4qqYHUnbS0q3hIz9a70EW2BvliwuN" alt="Graphic work 1"></div>
+          <div class="media-card wide has-image"><img src="https://drive.google.com/uc?export=view&id=1c6ZxEA4ctWR55Axk_1HF90gOkWaYdR65" alt="Graphic work 2"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1DCNi0ZaJxjsJnRWj2QchEYUpwY6D2dbF" alt="Graphic work 3"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1yehimpd4SGmyOJjPoZtkBV2T0IgsI8dc" alt="Graphic work 8"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=13HoLxt8PJ2G8he2YxjLiUkGaIfgWX4ak" alt="Graphic work 9"></div>
+          <div class="media-card wide has-image"><img src="https://drive.google.com/uc?export=view&id=1AF5b--OxPkD_ErLy2PXMtHMELhDwzdfG" alt="Graphic work 11"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1Qs8WKpKiMTXGiKx_g0ahYOacwMzUSAt1" alt="Graphic work 12"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1CT7o0cEuZxq_IRDKO77p4ngd8G8JNgpu" alt="Graphic work 13"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1WQ1hQ_06vLb_QDzWSASnQB3x4qcnObCp" alt="Graphic work 14"></div>
+          <div class="media-card has-image"><img src="https://drive.google.com/uc?export=view&id=1ZX9Hex0ybTLvZR3_yQ6oXQBlTCs28OEd" alt="Graphic work 15"></div>
         </div>
       </div>
 
@@ -264,12 +297,12 @@
       <div class="portfolio-group">
         <h3>Identity Design</h3>
         <div class="grid">
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
-          <div class="media-card"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=19lZ1eiKFgf8NrFlCqPBC3NcCmcAjaCyH" alt="buzz genie logo"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=1ujPNatxWkX_-z0PppG94LqTciqBH4MKI" alt="Booth logo"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=1MwK81fYd4SYQxP45p9hLh1kooIpG5Hdp" alt="ウマイしばた logo"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=180ABmtwEU3ysZFEReGiFO1NaB-9Sa5lj" alt="EMOKE logo"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=17zIJMCfMrOlAllDOJpislU51K-sEkBTp" alt="buzz genie logo variation"></div>
+          <div class="media-card logo has-image"><img src="https://drive.google.com/uc?export=view&id=1-5G-2aUHLYlHe8XufPRHT-2xQYATRcyY" alt="Booth logo variation"></div>
         </div>
       </div>
     </div>
