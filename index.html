@@ -118,7 +118,38 @@
       gap:72px;
       align-items:start;
     }
-    .profile-photo{aspect-ratio:4/5;background:#d7d0c8}
+    .profile-photo{
+      margin-top:36px;
+      aspect-ratio:1/1;
+      background:#fff;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+    }
+    .profile-photo img{width:100%;height:100%;object-fit:contain}
+    .profile-marks{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+      margin-top:24px;
+      align-items:center;
+    }
+    .profile-marks img{
+      width:100%;
+      max-height:130px;
+      object-fit:contain;
+      background:#fff;
+      padding:10px;
+    }
+    .profile-magazine{
+      margin-top:24px;
+      width:100%;
+      max-width:420px;
+    }
+    .signature{
+      width:min(420px,90%);
+      margin:48px auto 0;
+    }
     .timeline{display:grid;gap:34px}
     .timeline p{margin:0;color:#45403b}
     .contact{
@@ -243,7 +274,12 @@
         <div>
           <div class="eyebrow">Profile</div>
           <h2>SEIKAN<br>YONEMATA</h2>
-          <div class="profile-photo" style="margin-top:36px"></div>
+          <div class="profile-photo"><img src="assets/profile-portrait.png" alt="SEIKAN YONEMATA portrait"></div>
+          <div class="profile-marks">
+            <img src="assets/profile-umai.png" alt="ウマイしばた ロゴ">
+            <img src="assets/profile-buzz.png" alt="buzz genie ロゴ">
+          </div>
+          <img class="profile-magazine" src="assets/profile-magazine.png" alt="過去の掲載実績">
         </div>
         <div class="timeline">
           <p>福岡県北九州のストリート系セレクトショップで、プライベートブランドの企画・デザインを担当。ジャケットから小物までをフルオリジナルで展開し、生地にグラフィックを施すなど独自性のあるアイテムが注目を集めた。</p>
@@ -261,6 +297,7 @@
       <div class="eyebrow">Contact</div>
       <h2>Get in touch.</h2>
       <p>お仕事のご依頼・ご相談は、下記のメールアドレスよりご連絡ください。ご希望の内容を詳しくお伺いしたうえで、お見積もりをご案内いたします。内容や時期によっては、ご返信にお時間をいただく場合がございます。あらかじめご了承ください。</p>
+      <img class="signature" src="assets/signature.png" alt="Seikan Yonemata">
       <a class="mail" href="#">E-mail</a>
     </div>
   </section>
